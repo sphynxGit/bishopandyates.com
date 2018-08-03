@@ -37,9 +37,9 @@ func Generate(domain string, category string, template string) {
 
     var layout string
     if cat == "finance" {
-        layout = generateIndex(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/jekyll-templates/finance", template)
+        layout = generateIndex("./jekyll-templates/finance", template)
     } else if cat == "healthcare" {
-        layout = generateIndex(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/jekyll-templates/healthcare", template)
+        layout = generateIndex("./jekyll-templates/healthcare", template)
     } else {
         errStr := "The category you entered is invalid."
         flag.PrintDefaults()
