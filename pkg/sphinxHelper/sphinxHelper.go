@@ -96,7 +96,7 @@ func CreateSSHKey(client *github.Client, ctx context.Context) {
 
 	if _, err := os.Stat(homeDir.HomeDir + "/.ssh/id_rsa_sphinx_" + hostName); os.IsNotExist(err) {
 		pubKey, priKey, kgErr := genKeyPair()
-		sphinxHelper.CheckErr(kgErr)
+		CheckErr(kgErr)
 
         fPub, pubErr := os.Create(homeDir.HomeDir + "/.ssh/id_rsa_sphinx_" + hostName + ".pub")
         CheckErr(pubErr)
