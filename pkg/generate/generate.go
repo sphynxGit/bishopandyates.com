@@ -21,9 +21,9 @@ const INFO_ICON = "[+]"
 func Generate(domain string, category string, template string) {
     homeDir, hmErr := user.Current()
     checkErr(hmErr)
-    delErr := os.Remove(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/CNAME")
+    delErr := os.Remove(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/CNAME")
     checkErr(delErr)
-    f, crtErr := os.Create(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/CNAME")
+    f, crtErr := os.Create(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/CNAME")
     checkErr(crtErr)
     fmt.Fprintln(f, domain)
 
@@ -37,9 +37,9 @@ func Generate(domain string, category string, template string) {
 
     var layout string
     if cat == "finance" {
-        layout = generateIndex(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/jekyll-templates/finance", template)
+        layout = generateIndex(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/jekyll-templates/finance", template)
     } else if cat == "healthcare" {
-        layout = generateIndex(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/jekyll-templates/healthcare", template)
+        layout = generateIndex(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/jekyll-templates/healthcare", template)
     } else {
         errStr := "The category you entered is invalid."
         flag.PrintDefaults()
@@ -58,7 +58,7 @@ func generateIndex(path string, templatePath string) (lo string) {
         var lines []string
         var layout string
         if templatePath == "" {
-            layout = randFromFile(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bslayouts")
+            layout = randFromFile(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bslayouts")
             imgOne := randFile(path + "/img")
             imgOneStr := "imgOne: ." + imgOne.Name()
             imgTwo := randFile(path + "/img")
@@ -82,8 +82,8 @@ func generateIndex(path string, templatePath string) (lo string) {
             lines = append(lines, generateCategories(path + "/categories"))
             lines = append(lines, "servicesHeading: Our offerings")
             lines = append(lines, "contactDesc: Contact Us Today!")
-            lines = append(lines, "phoneNumber: " + randFromFile(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/phone-num"))
-            lines = append(lines, "email: " + randFromFile(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/emails"))
+            lines = append(lines, "phoneNumber: " + randFromFile(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/phone-num"))
+            lines = append(lines, "email: " + randFromFile(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/emails"))
             lines = append(lines, "---")
             lines = append(lines, "\n")
             lines = append(lines, randFromFile(path + "/content"))
@@ -96,7 +96,7 @@ func generateIndex(path string, templatePath string) (lo string) {
             }
         }
 
-        writeTemplate(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/index.md", lines)
+        writeTemplate(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/index.md", lines)
 
         return layout
 }
@@ -213,13 +213,13 @@ func setThemeColor(layout string) {
     var path string
     switch layout {
         case "index":
-            path = homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bootstrap/css/creative.css"
+            path = homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bootstrap/css/creative.css"
             break
         case "index2":
-            path = homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bootstrap2/css/resume.css"
+            path = homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bootstrap2/css/resume.css"
             break
         case "index3":
-            path = homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bootstrap3/css/stylish-portfolio.css"
+            path = homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/bootstrap3/css/stylish-portfolio.css"
             break
         case "":
             return
@@ -239,7 +239,7 @@ func setThemeColor(layout string) {
     }
 
     lines = lines[0:(len(lines)-3)]
-    clr := randFromFile(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/colors")
+    clr := randFromFile(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/colors")
     lines = append(lines, ":root {\n\t--themeColor: " + clr + ";\n}")
     writeTemplate(path, lines)
 }
