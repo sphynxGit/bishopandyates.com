@@ -89,11 +89,11 @@ func cmdHandler(gitHubUser string) {
     sphinxHelper.CheckErr(hmErr)
 
 	var r *git.Repository
-    if _, err := os.Stat(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/.git"); os.IsNotExist(err) {
-        r, err = git.PlainInit(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/", false)
+    if _, err := os.Stat(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/.git"); os.IsNotExist(err) {
+        r, err = git.PlainInit(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/", false)
         sphinxHelper.CheckErr(err)
     } else {
-		r, err = git.PlainOpen(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/")
+		r, err = git.PlainOpen(homeDir.HomeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/")
 		sphinxHelper.CheckErr(err)
 	}
 
