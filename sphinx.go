@@ -110,8 +110,10 @@ func cmdHandler(gitHubUser string) {
 
     sphinxHelper.CreateSSHKey(client, ctx)
 
+    hostName, hnErr := os.Hostname()
+    CheckErr(hnErr)
 
-    pem, pemErr := ioutil.ReadFile(homeDir.HomeDir + "/.ssh/id_rsa_sphinx")
+    pem, pemErr := ioutil.ReadFile(homeDir.HomeDir + "/.ssh/id_rsa_sphinx_" + hostName)
     sphinxHelper.CheckErr(pemErr)
     signer, signErr := ssh.ParsePrivateKey(pem)
     sphinxHelper.CheckErr(signErr)
