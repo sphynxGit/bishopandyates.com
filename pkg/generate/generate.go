@@ -7,6 +7,7 @@ import (
     "io/ioutil"
     "math/rand"
     "os"
+    "os/user"
     "time"
 )
 
@@ -18,6 +19,8 @@ const ERR_ICON =  "[!]"
 const INFO_ICON = "[+]"
 
 func Generate(domain string, category string, template string) {
+    homeDir, hmErr := user.Current()
+    checkErr(hmErr)
     delErr := os.Remove(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/CNAME")
     checkErr(delErr)
     f, crtErr := os.Create(homeDir + "/go/src/git.praetorianlabs.com/mars/sphinx/CNAME")
@@ -50,6 +53,8 @@ func Generate(domain string, category string, template string) {
 // generateIndex creates the index.md file to be
 // used as index.html
 func generateIndex(path string, templatePath string) (lo string) {
+        homeDir, hmErr := user.Current()
+        checkErr(hmErr)
         var lines []string
         var layout string
         if templatePath == "" {
@@ -202,6 +207,9 @@ func writeTemplate(path string, lines []string) {
 // setThemeColor selects a random color to
 // be used in the theme of the website
 func setThemeColor(layout string) {
+    homeDir, hmErr := user.Current()
+    checkErr(hmErr)
+
     var path string
     switch layout {
         case "index":
