@@ -1,35 +1,35 @@
 ---
 layout: index3
-imgOne: ../jekyll-templates/finance/img/rawpixel-626044-unsplash.jpg
-imgTwo: ../jekyll-templates/finance/img/rawpixel-600780-unsplash.jpg
-imgThree: ../jekyll-templates/finance/img/rawpixel-558596-unsplash.jpg
-imgFour: ../jekyll-templates/finance/img/icons8-team-643415-unsplash.jpg
-title: Vitality Finance
-navTitle: Finance Tax
-heading: Finance Tax
-subheading: Finances made less scary.
+imgOne: ../jekyll-templates/finance/img/hector-j-rivas-89863-unsplash.jpg
+imgTwo: ../jekyll-templates/finance/img/icons8-team-643415-unsplash.jpg
+imgThree: ../jekyll-templates/finance/img/sean-pollock-203658-unsplash.jpg
+imgFour: ../jekyll-templates/finance/img/fabian-blank-78637-unsplash.jpg
+title: Vitality Economy
+navTitle: Finance Articles
+heading: Finance Articles
+subheading: Invest in problem markets.
 aboutHeading: About Us
-serviceOne: Debt Consolidation
-serviceOneDesc: Debt consolidation means combining more than one debt obligation into a new loan with a favourable term structure such as lower interest rate structure, tenure, etc. Here, the amount received from the new loan is used to pay off other debts.
-serviceTwo: Capital Lease
-serviceTwoDesc: Capital lease is a lease agreement in which the lessor agrees to transfer the ownership rights to the lessee after the completion of the lease period. Capital or finance leases are long term and non cancellable in nature.
-serviceThree: Hedge Funds
-serviceThreeDesc: Hedge funds are alternative investments using pooled funds that employ numerous different strategies to earn active return, or alpha, for their investors. Hedge funds may be aggressively managed or make use of derivatives and leverage in both domestic and international markets with the goal of generating high returns (either in an absolute sense or over a specified market benchmark). It is important to note that hedge funds are generally only accessible to accredited investors as they require less SEC regulations than other funds.
-serviceFour: Lumpsum
-serviceFourDesc: A lump sum amount is defined as a single complete sum of money. A lump sum investment is of the entire amount at one go.
-categoryOne: Market Analysis
-categoryOneName: Bleeding edge analysis
-categoryTwo: Quotas
-categoryTwoName: We will help you meet your quotas
-categoryThree: Money
-categoryThreeName: Financial advantages
-categoryFour: Loans
-categoryFourName: Get your money now
+serviceOne: Swap Positioning
+serviceOneDesc: A practice whereby an intermediary enters into one side of the swap transaction, such as fixed rate payer (or floating rate payer) to a client who wishes to be a floating rate payer (or a fixed rate payer). Then the intermediary waits for a matching counterparty and offloads the swap thereto. In other words, swap positioning involves holding a portfolio of swaps usually by a swap dealer without seeking to offset each swap with an identical mirror swap.
+serviceTwo: Cryptocurrency
+serviceTwoDesc: A cryptocurrency (or crypto currency) is digital asset designed to work as a medium of exchange that uses strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets. Cryptocurrency is a kind of digital currency, virtual currency or alternative currency. Cryptocurrencies use decentralized control as opposed to centralized electronic money and central banking systems. The decentralized control of each cryptocurrency works through distributed ledger technology, typically a blockchain, that serves as a public financial transaction database.
+serviceThree: Fully Drawn Advance
+serviceThreeDesc: Fully drawn advance is a financing method which gives you the freedom to take funds or a loan but only for longer durations. It is an ideal way of financing assets which have a long shelf life such as real estate or a manufacturing plant and equipment, etc.
+serviceFour: Asset Allocation
+serviceFourDesc: Asset allocation is an investment strategy that aims to balance risk and reward by apportioning a portfolio's assets according to an individual's goals, risk tolerance and investment horizon. The three main asset classes - equities, fixed-income, and cash and equivalents - have different levels of risk and return, so each will behave differently over time.
+categoryOne: Marketing
+categoryOneName: Get your name out there
+categoryTwo: Funds
+categoryTwoName: We'll take care of you
+categoryThree: Loans
+categoryThreeName: Get your money now
+categoryFour: Stock
+categoryFourName: Stock market management
 servicesHeading: Our offerings
 contactDesc: Contact Us Today!
-phoneNumber: (786) 297-2976
-email: timtroyr@mac.com
+phoneNumber: (893) 926-6319
+email: wiseb@optonline.net
 ---
 
 
-Financial risk management, an element of corporate finance, is the practice of creating and protecting economic value in a firm by using financial instruments to manage exposure to risk, particularly credit risk and market risk. (Other risk types include foreign exchange, shape, volatility, sector, liquidity, inflation risks, etc.) It focuses on when and how to hedge using financial instruments; in this sense it overlaps with financial engineering. Similar to general risk management, financial risk management requires identifying its sources, measuring it (see: Risk measure#Examples), and formulating plans to address these, and can be qualitative and quantitative. In the banking sector worldwide, the Basel Accords are generally adopted by internationally active banks for tracking, reporting and exposing operational, credit and market risks. 
+Finance is one of the most important aspects of business management and includes analysis related to the use and acquisition of funds for the enterprise.
